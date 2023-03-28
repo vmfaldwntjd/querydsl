@@ -104,7 +104,7 @@ public class MemberRepositoryImpl implements MemberRepositoryCustom {
                         ageLoe(condition.getAgeLoe()))::fetchCount);
     }
 
-    private BooleanExpression usernameEq(String usernameCond) {1
+    private BooleanExpression usernameEq(String usernameCond) {
         return StringUtils.hasText(usernameCond) ? member.username.eq(usernameCond) : null;
     }
 
